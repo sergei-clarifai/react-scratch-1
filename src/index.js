@@ -1,7 +1,16 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
+
+import { css } from '@linaria/core';
+
+const testClass = css`
+  color: red;
+  font-weight: bold;
+`;
+
 const App = () => {
- return <h1>This is my React app2!</h1>;
- }
+  return <div className={testClass}>This is my React app 3!</div>;
+}
+
 ReactDOM.render(<App />, document.getElementById('app'));
 
